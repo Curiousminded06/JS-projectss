@@ -1,0 +1,58 @@
+/* Basic styles for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f0f0f0;
+    margin: 0;
+}
+
+/* Style the generate button */
+#generate {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px #999;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover and active states for the button */
+#generate:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+}
+
+#generate:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px #666;
+}
+
+/* Style the textarea */
+#password {
+    width: 60%;
+    padding: 12px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+    resize: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for the textarea */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
